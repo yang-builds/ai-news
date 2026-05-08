@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 快讯 &amp; 市场动态 · 2026年05月09日 06:07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:#f8f9fc;color:#1a1f2e;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.header{background:linear-gradient(140deg,#060d1f,#0c1f45,#0f3460,#1d4ed8);padding:2.5rem 2rem 2rem;text-align:center;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 40px,rgba(255,255,255,.03) 40px,rgba(255,255,255,.03) 41px),repeating-linear-gradient(90deg,transparent,transparent 40px,rgba(255,255,255,.03) 40px,rgba(255,255,255,.03) 41px);pointer-events:none}
+.header-inner{position:relative;z-index:1}
+.header h1{font-family:'Noto Serif SC',serif;font-size:clamp(1.4rem,4vw,2rem);color:#fff;font-weight:600}
+.header-meta{display:flex;justify-content:center;gap:.75rem;margin-top:.9rem;flex-wrap:wrap}
+.meta-pill{background:rgba(255,255,255,.12);color:rgba(255,255,255,.85);padding:.25rem .8rem;border-radius:999px;font-family:'IBM Plex Mono',monospace;font-size:.75rem;border:1px solid rgba(255,255,255,.15)}
+.dot{width:7px;height:7px;background:#22c55e;border-radius:50%;display:inline-block;margin-right:.35rem;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.nav{background:#fff;border-bottom:1px solid #e5e7eb;padding:.6rem 2rem;display:flex;gap:1rem;align-items:center}
+.nav a{font-size:.82rem;color:#6b7280}
+.nav a:hover{color:#1d4ed8}
+.tabs-bar{background:#fff;border-bottom:2px solid #e5e7eb}
+.tabs-inner{max-width:860px;margin:0 auto;padding:0 1.5rem;display:flex}
+.tab-btn{padding:.75rem 1.25rem;font-size:.9rem;font-weight:500;color:#6b7280;cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s}
+.tab-btn.active{color:#1d4ed8;border-bottom-color:#1d4ed8}
+.tab-btn:hover:not(.active){color:#374151}
+.panel{display:none}
+.panel.active{display:block}
+.main{max-width:860px;margin:0 auto;padding:2rem 1.5rem}
+.section-label{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#6b7280;margin-bottom:1.25rem;display:flex;align-items:center;gap:.6rem}
+.section-label::after{content:'';flex:1;height:1px;background:#e5e7eb}
+.cards{display:flex;flex-direction:column;gap:1.1rem}
+.card{background:#fff;border-radius:10px;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);display:grid;grid-template-columns:2.8rem 1fr;gap:1.1rem;border-left:3px solid var(--cat-color);opacity:0;animation:fadeUp .45s ease forwards;animation-delay:var(--delay)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.card{animation:none;opacity:1}}
+.card-num{font-family:'IBM Plex Mono',monospace;font-size:1.3rem;font-weight:500;color:var(--cat-color);line-height:1;padding-top:.15rem}
+.card-tag{display:inline-flex;align-items:center;gap:.3rem;font-size:.7rem;font-weight:500;padding:.2rem .55rem;border-radius:4px;background:var(--cat-bg);color:var(--cat-color);margin-bottom:.5rem;font-family:'IBM Plex Mono',monospace}
+.card-title{font-family:'Noto Serif SC',serif;font-size:1rem;font-weight:600;color:#111827;line-height:1.4;margin-bottom:.4rem}
+.card-summary{font-size:.855rem;color:#4b5563;line-height:1.65;margin-bottom:.65rem}
+.card-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem}
+.card-source{font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:#9ca3af}
+.card-link{font-size:.76rem;color:#1d4ed8;padding:.25rem .6rem;border:1px solid #dbeafe;border-radius:5px;transition:background .15s}
+.card-link:hover{background:#eff6ff}
+.cat-cn{--cat-color:#dc2626;--cat-bg:#fef2f2}
+.cat-model{--cat-color:#0891b2;--cat-bg:#ecfeff}
+.cat-dev{--cat-color:#7c3aed;--cat-bg:#f5f3ff}
+.cat-biz{--cat-color:#be185d;--cat-bg:#fdf2f8}
+.cat-ind{--cat-color:#065f46;--cat-bg:#ecfdf5}
+.cat-sec{--cat-color:#b45309;--cat-bg:#fffbeb}
+.cat-stock{--cat-color:#0369a1;--cat-bg:#f0f9ff}
+.cat-macro{--cat-color:#7c3aed;--cat-bg:#f5f3ff}
+.cat-commodity{--cat-color:#b45309;--cat-bg:#fffbeb}
+.cat-policy{--cat-color:#065f46;--cat-bg:#ecfdf5}
+.footer{text-align:center;padding:2.5rem 1rem;font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:#9ca3af}
+@media(max-width:560px){.card{grid-template-columns:1fr}.card-num{display:none}}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <h1>🤖 AI 快讯 &amp; 市场动态</h1>
+    <div class="header-meta">
+      <span class="meta-pill"><span class="dot"></span>Daily Briefing</span>
+      <span class="meta-pill">2026年05月09日 06:07</span>
+    </div>
+  </div>
+</header>
+<nav class="nav"><a href="index.html">← 归档首页</a></nav>
+<div class="tabs-bar"><div class="tabs-inner">
+  <button class="tab-btn active" onclick="switchTab('ai',this)">🤖 AI 快讯</button>
+  <button class="tab-btn" onclick="switchTab('market',this)">📈 市场动态</button>
+</div></div>
+
+<div id="panel-ai" class="panel active"><div class="main">
+  <p class="section-label">AI 行业精选 · 10条</p>
+  <div class="cards">
+
+    <article class="card cat-model" style="--delay:.06s">
+      <div class="card-num">01</div>
+      <div>
+        <span class="card-tag">🧠 模型前沿</span>
+        <h2 class="card-title">DeepSeek 开源 V4 大语言模型系列，含旗舰版 V4-Pro 与轻量版 V4-Flash</h2>
+        <p class="card-summary">中国 AI 公司 DeepSeek 于 4 月下旬正式开源其全新 V4 系列大语言模型，包括旗舰模型 V4-Pro 和更小型的 V4-Flash。此次发布延续了 DeepSeek 一贯的开源策略，引发全球开发者广泛关注。4 月份成为有史以来单月大模型新发布数量最多的月份，六家机构在前十天内相继发布了生产级模型。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：SiliconANGLE</span>
+          <a class="card-link" href="https://siliconangle.com/2026/04/24/deepseek-open-sources-v4-large-language-model-series/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-model" style="--delay:.12s">
+      <div class="card-num">02</div>
+      <div>
+        <span class="card-tag">🧠 模型前沿</span>
+        <h2 class="card-title">OpenAI 发布 GPT-5.4，首款原生支持计算机操作的通用模型</h2>
+        <p class="card-summary">GPT-5.4 是 OpenAI 首款内置最先进计算机使用能力的通用模型，能够操控电脑并跨应用执行复杂工作流。该模型标志着 AI Agent 进入新阶段，可自主完成桌面级任务。与此同时，OpenAI 年化营收已突破 250 亿美元，并据报道正在为最早 2026 年底上市做初步准备。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：LLM Stats</span>
+          <a class="card-link" href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-model" style="--delay:.18s">
+      <div class="card-num">03</div>
+      <div>
+        <span class="card-tag">🧠 模型前沿</span>
+        <h2 class="card-title">Anthropic 发布 Claude Mythos 5，参数量达 10 万亿，创模型规模新纪录</h2>
+        <p class="card-summary">Anthropic 推出 Claude Mythos 5，参数量高达 10 万亿，同时发布中等规模模型 Capabara。公司还发布了专注于软件漏洞识别的 Claude Mythos Preview，并将其纳入名为"Project Glasswing"的网络安全计划，仅向精选企业开放访问。Anthropic 年化营收已突破 300 亿美元，Q1 单季度同比增长约 80 倍。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：AI Weekly</span>
+          <a class="card-link" href="https://aiweekly.co/issues/anthropic-just-had-ais-biggest-week-of-2026" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-biz" style="--delay:.24s">
+      <div class="card-num">04</div>
+      <div>
+        <span class="card-tag">💰 商业动向</span>
+        <h2 class="card-title">谷歌宣布向 Anthropic 投资最高 400 亿美元，创科技史最大单笔 AI 投资</h2>
+        <p class="card-summary">谷歌宣布以现金和算力形式向 Anthropic 投资最高 400 亿美元，进一步巩固双方战略合作关系。Anthropic 同时承诺向谷歌云提供 2000 亿美元的算力采购，并与 SpaceX 签署协议，获得 xAI Colossus 1 超级计算机的访问权限。此次投资创下科技行业史上最大单笔 AI 公司投资纪录。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：TechCrunch</span>
+          <a class="card-link" href="https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-biz" style="--delay:.30s">
+      <div class="card-num">05</div>
+      <div>
+        <span class="card-tag">💰 商业动向</span>
+        <h2 class="card-title">2026 年 Q1 全球创投融资达 3000 亿美元历史峰值，AI 占比 81%</h2>
+        <p class="card-summary">Crunchbase 数据显示，2026 年第一季度全球创投融资规模突破 3000 亿美元，同比增长逾 150%，创历史新高。其中 AI 领域独揽 2420 亿美元，占全球创投总额的 81%。OpenAI（1220 亿）、Anthropic（300 亿）、xAI（200 亿）和 Waymo（160 亿）四家公司合计融资近 1880 亿美元，约占全球创投总量的 65%。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Crunchbase News</span>
+          <a class="card-link" href="https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-cn" style="--delay:.36s">
+      <div class="card-num">06</div>
+      <div>
+        <span class="card-tag">🇨🇳 中国动态</span>
+        <h2 class="card-title">中国阻止 Meta 收购 AI 初创公司 Manus，向美国科技巨头发出警告信号</h2>
+        <p class="card-summary">中国监管部门叫停 Meta 收购国内 AI 初创公司 Manus 的计划，并宣布将限制国内 AI 企业在未获政府批准的情况下接受美国资本。国家发展和改革委员会等机构已向多家知名 AI 公司发出通知，要求拒绝美元融资。分析人士认为此举标志着中国对前沿技术领域外资审查进入新阶段。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Al Jazeera / CNBC</span>
+          <a class="card-link" href="https://www.aljazeera.com/news/2026/4/27/china-blocks-us-tech-giant-meta-from-acquiring-ai-startup-manus" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-cn" style="--delay:.42s">
+      <div class="card-num">07</div>
+      <div>
+        <span class="card-tag">🇨🇳 中国动态</span>
+        <h2 class="card-title">中国法院裁定：企业不得以 AI 替代为由单独解雇员工</h2>
+        <p class="card-summary">中国一家法院作出裁定，企业不得仅以引入人工智能替代为由对员工实施解雇。此案被认为是中国劳动保护法律在 AI 时代的重要判例，反映出当局在积极推动 AI 发展的同时，努力维护劳动市场稳定的政策取向。华为昇腾 950PR 芯片今年预计量产 75 万片，国内 AI 算力自主化进程也在同步提速。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Bloomberg / Fortune</span>
+          <a class="card-link" href="https://www.bloomberg.com/news/articles/2026-05-02/chinese-court-rules-firms-can-t-lay-off-workers-on-ai-grounds" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-ind" style="--delay:.48s">
+      <div class="card-num">08</div>
+      <div>
+        <span class="card-tag">🏭 行业应用</span>
+        <h2 class="card-title">NASA 毅力号火星车首次全程依赖 AI 规划路线，自主穿越火星地表</h2>
+        <p class="card-summary">NASA 的毅力号火星探测车创造历史，首次在无人工操作员介入的情况下，完全依靠人工智能规划的路线在火星表面行驶。与此同时，Cadence 和英伟达在 CadenceLIVE 2026 大会上宣布扩大合作，联合攻克机器人从虚拟训练迁移至现实世界时的性能衰减问题（sim-to-real gap）。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Microsoft On the Issues</span>
+          <a class="card-link" href="https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-ind" style="--delay:.54s">
+      <div class="card-num">09</div>
+      <div>
+        <span class="card-tag">🏭 行业应用</span>
+        <h2 class="card-title">全球 AI 使用率升至 17.8%，软件代码产量同比激增 78%</h2>
+        <p class="card-summary">微软最新报告显示，2026 年第一季度全球劳动年龄人口 AI 使用率从 16.3% 升至 17.8%。AI 编程能力的大幅增强推动全球代码产量同比增长 78%，Claude Code、OpenAI Codex 和 GitHub Copilot 等工具是主要贡献者。Snap 首席执行官宣布裁员约 1000 人并关闭 300 余个招聘职位，直接援引 AI 提升团队效率为原因。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Microsoft On the Issues</span>
+          <a class="card-link" href="https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-sec" style="--delay:.60s">
+      <div class="card-num">10</div>
+      <div>
+        <span class="card-tag">🔒 安全监管</span>
+        <h2 class="card-title">特朗普政府推进 AI 监管，将测评谷歌、微软与 xAI 模型</h2>
+        <p class="card-summary">美国政府宣布进一步强化 AI 监管，CISA 宣布与 Google DeepMind 达成协议，允许美国政府在模型公开发布前对其进行评估。特朗普政府同时表示将对谷歌、微软和马斯克旗下 xAI 的模型进行测试，以评估潜在安全风险。此举标志着美国 AI 治理框架进入实质推进阶段。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：CNBC</span>
+          <a class="card-link" href="https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div></div>
+
+<div id="panel-market" class="panel"><div class="main">
+  <p class="section-label">市场动态精选 · 5条</p>
+  <div class="cards">
+
+    <article class="card cat-stock" style="--delay:.06s">
+      <div class="card-num">01</div>
+      <div>
+        <span class="card-tag">📊 股市动态</span>
+        <h2 class="card-title">美股三大指数创历史新高：纳指涨 1.71%，标普 500 收于 7398 点</h2>
+        <p class="card-summary">受 4 月非农就业数据强劲提振，美股于 5 月 8 日全线上扬并创历史新高。标普 500 涨 0.84% 至 7398.93 点，纳斯达克涨 1.71% 至 26247.08 点，道指小幅上涨 12 点。美国 4 月新增就业 11.5 万，远超市场预期的 6.5 万。纳斯达克已连续六周上涨，创 2024 年以来最长连涨纪录。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：TheStreet / CNBC</span>
+          <a class="card-link" href="https://www.thestreet.com/latest-news/stock-market-today-may-8-2026-updates" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-macro" style="--delay:.12s">
+      <div class="card-num">02</div>
+      <div>
+        <span class="card-tag">🏦 宏观经济</span>
+        <h2 class="card-title">美联储连续第三次维持利率不变，2026 年降息预期已几乎归零</h2>
+        <p class="card-summary">美联储 4 月会议再次将联邦基金利率维持在 3.50%–3.75% 区间不变，为连续第三次按兵不动。官员指出通胀仍受全球能源价格上涨影响而偏高，2026 年 PCE 通胀率预计为 2.7%。衍生品市场数据显示，投资者对今年内降息的预期已接近于零，中东冲突导致油价在 2 至 4 月间飙升逾 76%，使货币政策空间大为收窄。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：CNBC / Fidelity</span>
+          <a class="card-link" href="https://www.cnbc.com/2026/04/29/fed-interest-rate-decision-april-2026.html" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-commodity" style="--delay:.18s">
+      <div class="card-num">03</div>
+      <div>
+        <span class="card-tag">🛢️ 大宗商品</span>
+        <h2 class="card-title">原油突破 104 美元/桶，黄金站上 4720 美元/盎司创阶段新高</h2>
+        <p class="card-summary">5 月 8 日，布伦特原油报价升至每桶 104.07 美元，较前一日大涨 3.62 美元，较去年同期高出逾 40 美元，中东局势持续推升能源价格。黄金同日突破每盎司 4720 美元，创近期高点，国际能源署警告称此次冲突已扰乱约 1400 万桶/日的全球石油供应，冲突结束后产能恢复预计将较为缓慢。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Fortune / Trading Economics</span>
+          <a class="card-link" href="https://fortune.com/article/price-of-oil-05-08-2026/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-stock" style="--delay:.24s">
+      <div class="card-num">04</div>
+      <div>
+        <span class="card-tag">📊 股市动态</span>
+        <h2 class="card-title">港股恒指涨 1.6% 至两月高点 26626，沪综指收于 4180 点</h2>
+        <p class="card-summary">受美伊停火谈判进展乐观情绪带动，恒生指数 5 月 8 日上涨 413 点（1.6%），报收 26626 点，为今年 2 月以来最高水平。腾讯涨 3.4%、快手涨 7.3%、中芯国际涨 2.5%领涨。A 股方面，上证综指涨 0.48% 至 4180 点，深成指涨 1.18% 至 15641 点，寒武纪、中际旭创、亨通光电等科技股表现亮眼。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：South China Morning Post</span>
+          <a class="card-link" href="https://www.scmp.com/business/markets/article/3352687/hong-kong-stocks-cross-26500-easing-middle-east-concerns" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cat-policy" style="--delay:.30s">
+      <div class="card-num">05</div>
+      <div>
+        <span class="card-tag">📜 政策监管</span>
+        <h2 class="card-title">中国限制 AI 企业接受美国资本，对外资审查进入新阶段</h2>
+        <p class="card-summary">中国监管机构计划要求国内 AI 企业在未获政府审批的情况下拒绝接受美国来源的投资，国家发改委已向多家知名 AI 初创公司发出通知。此举紧随中国封堵 Meta 收购 Manus 事件之后，标志着中国对前沿技术领域外资管控的全面收紧。与此同时，中国国产芯片市场占有率已接近 41%，华为和寒武纪均计划大幅扩产。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Bloomberg</span>
+          <a class="card-link" href="https://www.bloomberg.com/news/articles/2026-04-24/china-to-curb-us-investment-in-tech-companies-after-meta-deal" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div></div>
+
+<footer class="footer">
+  <p>Generated by AI News Bot · 2026年05月09日 06:07</p>
+  <p style="margin-top:.4rem"><a href="index.html" style="color:#1d4ed8">查看所有期刊 →</a></p>
+</footer>
+<script>
+function switchTab(name,btn){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('panel-'+name).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
