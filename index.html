@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily · 归档首页</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;background:#f5f5f5;color:#1a1a1a;line-height:1.6;font-size:15px}
+a{color:inherit;text-decoration:none}
+
+.accent-bar{height:3px;background:#2563eb}
+
+.header{background:#fff;border-bottom:1px solid #e8e8e8}
+.header-inner{max-width:800px;margin:0 auto;padding:1rem 1.5rem;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:.5rem}
+.header-left{display:flex;align-items:center}
+.site-name{font-size:1.1rem;font-weight:800;color:#2563eb;letter-spacing:.07em;text-transform:uppercase;text-align:center;justify-self:center}
+.header-right{display:flex;align-items:center;gap:.6rem;justify-content:flex-end}
+.header-desc{font-size:.78rem;color:#bbb}
+.live-dot{width:6px;height:6px;background:#22c55e;border-radius:50%;display:inline-block;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+.main{max-width:800px;margin:0 auto;padding:2rem 1.5rem}
+
+.hero{margin-bottom:2.5rem}
+.hero-title{font-family:'Noto Serif SC',serif;font-size:1.5rem;font-weight:600;color:#111;margin-bottom:.5rem}
+.hero-sub{font-size:.875rem;color:#888;line-height:1.7}
+.hero-sub a{color:#2563eb}
+
+.section-label{display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem}
+.section-label-text{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#bbb;white-space:nowrap}
+.section-label-line{flex:1;height:1px;background:#eee}
+
+.issues{display:flex;flex-direction:column;gap:.5rem}
+
+.issue-item{background:#fff;border:1px solid #ebebeb;border-radius:8px;padding:1rem 1.25rem;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;transition:border-color .15s,box-shadow .15s;text-decoration:none;color:inherit}
+.issue-item:hover{border-color:#d4d4d4;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+
+.issue-left{flex:1;min-width:0}
+.issue-date{font-size:.72rem;color:#bbb;margin-bottom:.3rem;font-variant-numeric:tabular-nums}
+.issue-title{font-family:'Noto Serif SC',serif;font-size:.95rem;font-weight:600;color:#111;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.issue-right{display:flex;align-items:center;gap:.5rem;flex-shrink:0}
+.issue-badge{font-size:.68rem;color:#888;background:#f3f4f6;padding:.15rem .5rem;border-radius:3px;white-space:nowrap}
+.issue-arrow{color:#bbb;font-size:.9rem}
+
+.empty{text-align:center;padding:3rem 1rem;color:#bbb;font-size:.875rem}
+
+.footer{text-align:center;padding:2.5rem 1rem 3rem;font-size:.72rem;color:#ccc;border-top:1px solid #ebebeb;margin-top:1rem;background:#fff}
+
+@media(max-width:520px){
+  .header-inner{grid-template-columns:1fr;justify-items:center;gap:.3rem}
+  .header-left,.header-right{justify-content:center}
+  .issue-title{white-space:normal}
+  .issue-badge{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="accent-bar"></div>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="header-left"></div>
+    <span class="site-name">AI Daily</span>
+    <div class="header-right">
+      <span class="live-dot"></span>
+      <span class="header-desc">每工作日更新</span>
+    </div>
+  </div>
+</header>
+
+<div class="main">
+  <div class="hero">
+    <h1 class="hero-title">AI 快讯 &amp; 市场动态</h1>
+    <p class="hero-sub">每个工作日自动更新，精选全球 AI 科技快讯 10 条 + 市场动态 5 条，<br>来源：Reuters、Bloomberg、TechCrunch、The Verge 等国际媒体。</p>
+  </div>
+
+  <div class="section-label">
+    <span class="section-label-text">最新期刊</span>
+    <div class="section-label-line"></div>
+  </div>
+
+  <div class="issues">
+
+    <a class="issue-item" href="ai-news-20260509-0607.html">
+      <div class="issue-left">
+        <div class="issue-date">2026年05月09日 06:07</div>
+        <div class="issue-title">🔥 DeepSeek 开源 V4 大语言模型系列，含旗舰版 V4-Pro 与轻量版 V4-Flash</div>
+      </div>
+      <div class="issue-right">
+        <span class="issue-badge">10条 AI + 5条市场</span>
+        <span class="issue-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="issue-item" href="ai-news-20260508-0956.html">
+      <div class="issue-left">
+        <div class="issue-date">2026年05月08日 09:56</div>
+        <div class="issue-title">🔥 Anthropic 发布 Claude Mythos 5 超大型模型，跻身全球 AI 排行榜第一</div>
+      </div>
+      <div class="issue-right">
+        <span class="issue-badge">10条 AI + 5条市场</span>
+        <span class="issue-arrow">→</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>AI Daily · 由 Claude AI 自动生成并发布</p>
+</footer>
+
+</body>
+</html>
