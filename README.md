@@ -10,8 +10,8 @@
 
 | 日期 | 链接 |
 |------|------|
-| [2026年05月09日 06:07](https://yang-builds.github.io/ai-news/ai-news-20260509-0607.html) | AI快讯10条 + 市场动态5条 |
-| [2026年05月08日 09:56](https://yang-builds.github.io/ai-news/ai-news-20260508-0956.html) | AI快讯10条 + 市场动态5条 |
+| 2026年05月09日 06:07 | [AI快讯10条 + 市场动态5条](https://yang-builds.github.io/ai-news/ai-news-20260509-0607.html) |
+| 2026年05月08日 09:56 | [AI快讯10条 + 市场动态5条](https://yang-builds.github.io/ai-news/ai-news-20260508-0956.html) |
 
 ---
 
