@@ -55,6 +55,9 @@ a{color:inherit;text-decoration:none}
 .cat-policy{--cat-color:#065f46;--cat-bg:#ecfdf5}
 .footer{text-align:center;padding:2.5rem 1rem;font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:#9ca3af}
 @media(max-width:560px){.card{grid-template-columns:1fr}.card-num{display:none}}
+
+.card.headline{border-left-width:5px;background:#fffbf0}
+.headline-badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.7rem;font-weight:600;padding:.2rem .55rem;border-radius:4px;background:#fef3c7;color:#b45309;margin-bottom:.4rem;font-family:'IBM Plex Mono',monospace}
 </style>
 </head>
 <body>
@@ -77,9 +80,10 @@ a{color:inherit;text-decoration:none}
   <p class="section-label">AI 行业精选 · 10条</p>
   <div class="cards">
 
-    <article class="card cat-model" style="--delay:.06s">
+    <article class="card cat-model headline" style="--delay:.06s">
       <div class="card-num">01</div>
       <div>
+        <span class="headline-badge">🔥 今日头条</span>
         <span class="card-tag">🧠 模型前沿</span>
         <h2 class="card-title">Anthropic发布Claude Mythos 5超大型模型，跻身全球AI排行榜第一</h2>
         <p class="card-summary">Anthropic正式发布Claude Mythos 5，参数量达10万亿，被描述为Claude Opus 4.6之上的"阶跃式飞跃"。截至2026年3月，Anthropic已超越OpenAI、xAI和谷歌DeepMind，位居全球AI模型排行榜首位。与此同时，Anthropic年化收入突破300亿美元，大客户数量在不到两个月内从500家翻倍至超1000家。</p>
