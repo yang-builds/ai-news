@@ -55,6 +55,9 @@ a{color:inherit;text-decoration:none}
 .cat-policy{--cat-color:#065f46;--cat-bg:#ecfdf5}
 .footer{text-align:center;padding:2.5rem 1rem;font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:#9ca3af}
 @media(max-width:560px){.card{grid-template-columns:1fr}.card-num{display:none}}
+
+.card.headline{border-left-width:5px;background:#fffbf0}
+.headline-badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.7rem;font-weight:600;padding:.2rem .55rem;border-radius:4px;background:#fef3c7;color:#b45309;margin-bottom:.4rem;font-family:'IBM Plex Mono',monospace}
 </style>
 </head>
 <body>
@@ -77,9 +80,10 @@ a{color:inherit;text-decoration:none}
   <p class="section-label">AI 行业精选 · 10条</p>
   <div class="cards">
 
-    <article class="card cat-model" style="--delay:.06s">
+    <article class="card cat-model headline" style="--delay:.06s">
       <div class="card-num">01</div>
       <div>
+        <span class="headline-badge">🔥 今日头条</span>
         <span class="card-tag">🧠 模型前沿</span>
         <h2 class="card-title">DeepSeek 开源 V4 大语言模型系列，含旗舰版 V4-Pro 与轻量版 V4-Flash</h2>
         <p class="card-summary">中国 AI 公司 DeepSeek 于 4 月下旬正式开源其全新 V4 系列大语言模型，包括旗舰模型 V4-Pro 和更小型的 V4-Flash。此次发布延续了 DeepSeek 一贯的开源策略，引发全球开发者广泛关注。4 月份成为有史以来单月大模型新发布数量最多的月份，六家机构在前十天内相继发布了生产级模型。</p>
