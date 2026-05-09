@@ -5,79 +5,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 快讯 &amp; 市场动态 · 2026年05月09日 06:07</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+  <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:#f8f9fc;color:#1a1f2e;line-height:1.6}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;background:#f5f5f5;color:#1a1a1a;line-height:1.6;font-size:15px}
 a{color:inherit;text-decoration:none}
-.header{background:linear-gradient(140deg,#060d1f,#0c1f45,#0f3460,#1d4ed8);padding:2.5rem 2rem 2rem;text-align:center;position:relative;overflow:hidden}
-.header::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 40px,rgba(255,255,255,.03) 40px,rgba(255,255,255,.03) 41px),repeating-linear-gradient(90deg,transparent,transparent 40px,rgba(255,255,255,.03) 40px,rgba(255,255,255,.03) 41px);pointer-events:none}
-.header-inner{position:relative;z-index:1}
-.header h1{font-family:'Noto Serif SC',serif;font-size:clamp(1.4rem,4vw,2rem);color:#fff;font-weight:600}
-.header-meta{display:flex;justify-content:center;gap:.75rem;margin-top:.9rem;flex-wrap:wrap}
-.meta-pill{background:rgba(255,255,255,.12);color:rgba(255,255,255,.85);padding:.25rem .8rem;border-radius:999px;font-family:'IBM Plex Mono',monospace;font-size:.75rem;border:1px solid rgba(255,255,255,.15)}
-.dot{width:7px;height:7px;background:#22c55e;border-radius:50%;display:inline-block;margin-right:.35rem;animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-.nav{background:#fff;border-bottom:1px solid #e5e7eb;padding:.6rem 2rem;display:flex;gap:1rem;align-items:center}
-.nav a{font-size:.82rem;color:#6b7280}
-.nav a:hover{color:#1d4ed8}
-.tabs-bar{background:#fff;border-bottom:2px solid #e5e7eb}
-.tabs-inner{max-width:860px;margin:0 auto;padding:0 1.5rem;display:flex}
-.tab-btn{padding:.75rem 1.25rem;font-size:.9rem;font-weight:500;color:#6b7280;cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s}
-.tab-btn.active{color:#1d4ed8;border-bottom-color:#1d4ed8}
-.tab-btn:hover:not(.active){color:#374151}
+.accent-bar{height:3px;background:#2563eb}
+.header{background:#fff;border-bottom:1px solid #e8e8e8}
+.header-inner{max-width:800px;margin:0 auto;padding:1rem 1.5rem;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:.5rem}
+.header-left{display:flex;align-items:center}
+.site-name{font-size:1.1rem;font-weight:800;color:#2563eb;letter-spacing:.07em;text-transform:uppercase;text-align:center;justify-self:center}
+.back-link{font-size:.78rem;color:#bbb;transition:color .12s}
+.back-link:hover{color:#2563eb}
+.header-right{display:flex;align-items:center;gap:.6rem;justify-content:flex-end}
+.header-date{font-size:.78rem;color:#bbb}
+.live-dot{width:6px;height:6px;background:#22c55e;border-radius:50%;display:inline-block;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.tabs-bar{background:#fff;border-bottom:1px solid #e8e8e8}
+.tabs-inner{max-width:800px;margin:0 auto;padding:0 1.5rem;display:flex}
+.tab-btn{padding:.85rem 1.1rem .8rem;font-size:.875rem;font-weight:500;color:#888;cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .12s,border-color .12s;white-space:nowrap}
+.tab-btn.active{color:#2563eb;border-bottom-color:#2563eb}
+.tab-btn:hover:not(.active){color:#333}
 .panel{display:none}
 .panel.active{display:block}
-.main{max-width:860px;margin:0 auto;padding:2rem 1.5rem}
-.section-label{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#6b7280;margin-bottom:1.25rem;display:flex;align-items:center;gap:.6rem}
-.section-label::after{content:'';flex:1;height:1px;background:#e5e7eb}
-.cards{display:flex;flex-direction:column;gap:1.1rem}
-.card{background:#fff;border-radius:10px;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);display:grid;grid-template-columns:2.8rem 1fr;gap:1.1rem;border-left:3px solid var(--cat-color);opacity:0;animation:fadeUp .45s ease forwards;animation-delay:var(--delay)}
-@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.main{max-width:800px;margin:0 auto;padding:1.75rem 1.5rem}
+.section-label{display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem}
+.section-label-text{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#bbb;white-space:nowrap}
+.section-label-line{flex:1;height:1px;background:#eee}
+.cards{display:flex;flex-direction:column;gap:.65rem}
+.card{background:#fff;border-radius:8px;padding:1.2rem 1.4rem;border:1px solid #ebebeb;display:grid;grid-template-columns:2.2rem 1fr;gap:.9rem;opacity:0;animation:fadeUp .35s ease forwards;animation-delay:var(--delay,0s);transition:border-color .15s,box-shadow .15s}
+.card:hover{border-color:#d4d4d4;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.card{animation:none;opacity:1}}
-.card-num{font-family:'IBM Plex Mono',monospace;font-size:1.3rem;font-weight:500;color:var(--cat-color);line-height:1;padding-top:.15rem}
-.card-tag{display:inline-flex;align-items:center;gap:.3rem;font-size:.7rem;font-weight:500;padding:.2rem .55rem;border-radius:4px;background:var(--cat-bg);color:var(--cat-color);margin-bottom:.5rem;font-family:'IBM Plex Mono',monospace}
-.card-title{font-family:'Noto Serif SC',serif;font-size:1rem;font-weight:600;color:#111827;line-height:1.4;margin-bottom:.4rem}
-.card-summary{font-size:.855rem;color:#4b5563;line-height:1.65;margin-bottom:.65rem}
+.card-num{font-size:.78rem;font-weight:600;color:#d4d4d4;padding-top:.1rem;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.card-meta{display:flex;align-items:center;gap:.4rem;margin-bottom:.45rem;flex-wrap:wrap}
+.card-tag{display:inline-flex;align-items:center;gap:.2rem;font-size:.68rem;font-weight:500;padding:.15rem .45rem;border-radius:3px;background:#f3f4f6;color:#777;margin-right:.3rem;margin-bottom:.45rem}
+.card-title{font-family:'Noto Serif SC',serif;font-size:.975rem;font-weight:600;color:#111;line-height:1.55;margin-bottom:.4rem}
+.card-summary{font-size:.825rem;color:#555;line-height:1.75;margin-bottom:.65rem}
 .card-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem}
-.card-source{font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:#9ca3af}
-.card-link{font-size:.76rem;color:#1d4ed8;padding:.25rem .6rem;border:1px solid #dbeafe;border-radius:5px;transition:background .15s}
+.card-source{font-size:.7rem;color:#ccc}
+.card-link{font-size:.75rem;color:#2563eb;padding:.18rem .55rem;border:1px solid #dbeafe;border-radius:4px;transition:background .12s}
 .card-link:hover{background:#eff6ff}
-.cat-cn{--cat-color:#dc2626;--cat-bg:#fef2f2}
-.cat-model{--cat-color:#0891b2;--cat-bg:#ecfeff}
-.cat-dev{--cat-color:#7c3aed;--cat-bg:#f5f3ff}
-.cat-biz{--cat-color:#be185d;--cat-bg:#fdf2f8}
-.cat-ind{--cat-color:#065f46;--cat-bg:#ecfdf5}
-.cat-sec{--cat-color:#b45309;--cat-bg:#fffbeb}
-.cat-stock{--cat-color:#0369a1;--cat-bg:#f0f9ff}
-.cat-macro{--cat-color:#7c3aed;--cat-bg:#f5f3ff}
-.cat-commodity{--cat-color:#b45309;--cat-bg:#fffbeb}
-.cat-policy{--cat-color:#065f46;--cat-bg:#ecfdf5}
-.footer{text-align:center;padding:2.5rem 1rem;font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:#9ca3af}
-@media(max-width:560px){.card{grid-template-columns:1fr}.card-num{display:none}}
-
-.card.headline{border-left-width:5px;background:#fffbf0}
-.headline-badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.7rem;font-weight:600;padding:.2rem .55rem;border-radius:4px;background:#fef3c7;color:#b45309;margin-bottom:.4rem;font-family:'IBM Plex Mono',monospace}
-</style>
+.card.headline{background:#fffdf7;border-color:#fde68a}
+.card.headline .card-num{color:#f59e0b}
+.headline-badge{display:inline-flex;align-items:center;gap:.2rem;font-size:.68rem;font-weight:700;padding:.15rem .45rem;border-radius:3px;background:#fef3c7;color:#d97706;margin-right:.35rem;margin-bottom:.35rem}
+.footer{text-align:center;padding:2.5rem 1rem 3rem;font-size:.72rem;color:#ccc;border-top:1px solid #ebebeb;margin-top:1rem;background:#fff}
+.footer a{color:#2563eb}
+@media(max-width:520px){
+  .card{grid-template-columns:1fr;gap:.6rem}
+  .card-num{display:none}
+  .header-inner{grid-template-columns:1fr;justify-items:center;gap:.4rem}
+  .header-left,.header-right{justify-content:center}
+}
+  </style>
 </head>
 <body>
+<div class="accent-bar"></div>
 <header class="header">
   <div class="header-inner">
-    <h1>🤖 AI 快讯 &amp; 市场动态</h1>
-    <div class="header-meta">
-      <span class="meta-pill"><span class="dot"></span>Daily Briefing</span>
-      <span class="meta-pill">2026年05月09日 06:07</span>
+    <div class="header-left">
+      <a class="back-link" href="index.html">← 归档首页</a>
+    </div>
+    <span class="site-name">AI Daily</span>
+    <div class="header-right">
+      <span class="live-dot"></span>
+      <span class="header-date">2026年05月09日 06:07</span>
     </div>
   </div>
 </header>
-<nav class="nav"><a href="index.html">← 归档首页</a></nav>
-<div class="tabs-bar"><div class="tabs-inner">
-  <button class="tab-btn active" onclick="switchTab('ai',this)">🤖 AI 快讯</button>
-  <button class="tab-btn" onclick="switchTab('market',this)">📈 市场动态</button>
-</div></div>
+<div class="tabs-bar">
+  <div class="tabs-inner">
+    <button class="tab-btn active" onclick="switchTab('ai',this)">🤖 AI 快讯 <span style="font-size:.7rem;color:#bbb;margin-left:.25rem">10</span></button>
+    <button class="tab-btn" onclick="switchTab('market',this)">📈 市场动态 <span style="font-size:.7rem;color:#bbb;margin-left:.25rem">5</span></button>
+  </div>
+</div>
 
 <div id="panel-ai" class="panel active"><div class="main">
-  <p class="section-label">AI 行业精选 · 10条</p>
+  <div class="section-label"><span class="section-label-text">AI 行业精选</span><div class="section-label-line"></div></div>
   <div class="cards">
 
     <article class="card cat-model headline" style="--delay:.06s">
@@ -215,7 +219,7 @@ a{color:inherit;text-decoration:none}
 </div></div>
 
 <div id="panel-market" class="panel"><div class="main">
-  <p class="section-label">市场动态精选 · 5条</p>
+  <div class="section-label"><span class="section-label-text">市场动态精选</span><div class="section-label-line"></div></div>
   <div class="cards">
 
     <article class="card cat-stock" style="--delay:.06s">
@@ -287,8 +291,7 @@ a{color:inherit;text-decoration:none}
 </div></div>
 
 <footer class="footer">
-  <p>Generated by AI News Bot · 2026年05月09日 06:07</p>
-  <p style="margin-top:.4rem"><a href="index.html" style="color:#1d4ed8">查看所有期刊 →</a></p>
+  <p>AI Daily · 每个工作日自动更新 · <a href="index.html">查看所有期刊 →</a></p>
 </footer>
 <script>
 function switchTab(name,btn){
