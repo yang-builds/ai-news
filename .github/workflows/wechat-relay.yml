@@ -1,0 +1,35 @@
+name: WeChat Relay - AI 日报推送
+
+on:
+  push:
+    paths:
+      - 'ai-news-*.html'    # 新增的某一期，不包含 index.html
+
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect newly added ai-news-*.html files
+        id: changed
+        run: |
+          # 只取本次 push 新增的（status=A）文件，避免历史文件被改动时重发
+          FILES=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- 'ai-news-*.html' | tr '\n' ' ')
+          echo "files=$FILES" >> "$GITHUB_OUTPUT"
+          echo "本次新增的 ai-news 文件: $FILES"
+
+      - name: Push each new file to WeChat Work
+        if: steps.changed.outputs.files != ''
+        env:
+          WEBHOOK_URL: ${{ secrets.WECHAT_WEBHOOK_AINEWS }}
+        run: |
+          for f in ${{ steps.changed.outputs.files }}; do
+            echo "▶ 推送 $f"
+            python3 scripts/send_to_wechat.py "$f"
+          done
