@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily · 2026年05月19日 06:06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;background:#f5f5f5;color:#1a1a1a;line-height:1.6;font-size:15px}
+a{color:inherit;text-decoration:none}
+.accent-bar{height:3px;background:#2563eb}
+.header{background:#fff;border-bottom:1px solid #e8e8e8}
+.header-inner{max-width:800px;margin:0 auto;padding:1rem 1.5rem;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:.5rem}
+.header-left{display:flex;align-items:center}
+.site-name{font-size:1.1rem;font-weight:800;color:#2563eb;letter-spacing:.07em;text-transform:uppercase;text-align:center;justify-self:center}
+.back-link{font-size:.78rem;color:#bbb;transition:color .12s}
+.back-link:hover{color:#2563eb}
+.header-right{display:flex;align-items:center;gap:.6rem;justify-content:flex-end}
+.header-date{font-size:.78rem;color:#bbb}
+.live-dot{width:6px;height:6px;background:#22c55e;border-radius:50%;display:inline-block;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.tabs-bar{background:#fff;border-bottom:1px solid #e8e8e8}
+.tabs-inner{max-width:800px;margin:0 auto;padding:0 1.5rem;display:flex}
+.tab-btn{padding:.85rem 1.1rem .8rem;font-size:.875rem;font-weight:500;color:#888;cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .12s,border-color .12s;white-space:nowrap}
+.tab-btn.active{color:#2563eb;border-bottom-color:#2563eb}
+.tab-btn:hover:not(.active){color:#333}
+.panel{display:none}
+.panel.active{display:block}
+.main{max-width:800px;margin:0 auto;padding:1.75rem 1.5rem}
+.section-label{display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem}
+.section-label-text{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#bbb;white-space:nowrap}
+.section-label-line{flex:1;height:1px;background:#eee}
+.cards{display:flex;flex-direction:column;gap:.65rem}
+.card{background:#fff;border-radius:8px;padding:1.2rem 1.4rem;border:1px solid #ebebeb;display:grid;grid-template-columns:2.2rem 1fr;gap:.9rem;opacity:0;animation:fadeUp .35s ease forwards;animation-delay:var(--delay,0s);transition:border-color .15s,box-shadow .15s}
+.card:hover{border-color:#d4d4d4;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.card{animation:none;opacity:1}}
+.card-num{font-size:.78rem;font-weight:600;color:#d4d4d4;padding-top:.1rem;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.card-meta{display:flex;align-items:center;gap:.4rem;margin-bottom:.45rem;flex-wrap:wrap}
+.card-tag{display:inline-flex;align-items:center;gap:.2rem;font-size:.68rem;font-weight:500;padding:.15rem .45rem;border-radius:3px;background:#f3f4f6;color:#777;margin-right:.3rem;margin-bottom:.45rem}
+.card-title{font-family:'Noto Serif SC',serif;font-size:.975rem;font-weight:600;color:#111;line-height:1.55;margin-bottom:.4rem}
+.card-summary{font-size:.825rem;color:#555;line-height:1.75;margin-bottom:.65rem}
+.card-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem}
+.card-source{font-size:.7rem;color:#ccc}
+.card-link{font-size:.75rem;color:#2563eb;padding:.18rem .55rem;border:1px solid #dbeafe;border-radius:4px;transition:background .12s}
+.card-link:hover{background:#eff6ff}
+.card.headline{background:#fffdf7;border-color:#fde68a}
+.card.headline .card-num{color:#f59e0b}
+.headline-badge{display:inline-flex;align-items:center;gap:.2rem;font-size:.68rem;font-weight:700;padding:.15rem .45rem;border-radius:3px;background:#fef3c7;color:#d97706;margin-right:.35rem;margin-bottom:.35rem}
+.footer{text-align:center;padding:2.5rem 1rem 3rem;font-size:.72rem;color:#ccc;border-top:1px solid #ebebeb;margin-top:1rem;background:#fff}
+.footer a{color:#2563eb}
+@media(max-width:520px){
+  .card{grid-template-columns:1fr;gap:.6rem}
+  .card-num{display:none}
+  .header-inner{grid-template-columns:1fr;justify-items:center;gap:.4rem}
+  .header-left,.header-right{justify-content:center}
+}
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<header class="header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="back-link" href="index.html">← 归档首页</a>
+    </div>
+    <span class="site-name">AI Daily</span>
+    <div class="header-right">
+      <span class="live-dot"></span>
+      <span class="header-date">2026年05月19日 06:06</span>
+    </div>
+  </div>
+</header>
+<div class="tabs-bar">
+  <div class="tabs-inner">
+    <button class="tab-btn active" onclick="switchTab('ai',this)">🤖 AI 快讯 <span style="font-size:.7rem;color:#bbb;margin-left:.25rem">10</span></button>
+    <button class="tab-btn" onclick="switchTab('market',this)">📈 市场动态 <span style="font-size:.7rem;color:#bbb;margin-left:.25rem">5</span></button>
+  </div>
+</div>
+<div id="panel-ai" class="panel active"><div class="main">
+  <div class="section-label"><span class="section-label-text">AI 行业精选</span><div class="section-label-line"></div></div>
+  <div class="cards">
+
+    <article class="card headline" style="--delay:.04s">
+      <div class="card-num">01</div>
+      <div>
+        <div class="card-meta">
+          <span class="headline-badge">🔥 今日头条</span>
+          <span class="card-tag">💻 开发者</span>
+        </div>
+        <h2 class="card-title">苹果iOS 27将开放Siri给Gemini和Claude，终结ChatGPT独占地位</h2>
+        <p class="card-summary">苹果正准备通过"Extensions"功能在iOS 27、iPadOS 27和macOS 27中引入重大AI平台转变，允许用户在Settings中自由选择Google Gemini、Anthropic Claude或OpenAI ChatGPT来驱动Siri、Writing Tools和Image Playground等核心功能。这标志着苹果结束ChatGPT独家合作，向更开放的AI生态迈进，预计在6月开发者大会上公布更多细节。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：9to5Mac</span>
+          <a class="card-link" href="https://9to5mac.com/2026/05/05/ios-27-will-let-you-choose-between-gemini-claude-and-more-for-ai-features-report/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.08s">
+      <div class="card-num">02</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">🧠 模型前沿</span></div>
+        <h2 class="card-title">OpenAI发布GPT-5.4：首个原生计算机操控通用大模型，超越人类基准</h2>
+        <p class="card-summary">OpenAI于3月发布的GPT-5.4在计算机操控基准OSWorld-Verified上达到75%成功率，超越人类72.4%的水平，远超前代GPT-5.2的47.3%。该模型具备原生截图解析、鼠标键盘指令能力，支持100万token上下文，可跨应用执行复杂工作流。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：OpenAI / CyberSecurityNews</span>
+          <a class="card-link" href="https://openai.com/index/introducing-gpt-5-4/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.12s">
+      <div class="card-num">03</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">💰 商业融资</span></div>
+        <h2 class="card-title">Anthropic据报寻求300至500亿美元融资，估值或接近万亿美元</h2>
+        <p class="card-summary">据Fortune报道，Anthropic正在就筹集300亿至500亿美元融资进行谈判，pre-money估值或高达9500亿美元，成为史上估值最高的私募AI公司之一。此前Anthropic已披露计划融资30亿美元，此次传言中的规模远超此前预期。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Fortune</span>
+          <a class="card-link" href="https://fortune.com/2026/05/13/behold-the-googlebook/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.16s">
+      <div class="card-num">04</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">💰 商业融资</span></div>
+        <h2 class="card-title">OpenAI年化营收突破250亿美元，最快2026年底启动IPO</h2>
+        <p class="card-summary">OpenAI已超过250亿美元年化营收里程碑，并正在为潜在的首次公开募股（IPO）做早期准备，时间最快可能在2026年底。这一营收规模增速在科技企业史上极为罕见，凸显ChatGPT商业化的惊人势头。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Fortune / Bloomberg</span>
+          <a class="card-link" href="https://fortune.com/2026/05/13/behold-the-googlebook/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.20s">
+      <div class="card-num">05</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">🧠 模型前沿</span></div>
+        <h2 class="card-title">谷歌I/O前夕将发布新版Gemini，性能或对标GPT-5.5</h2>
+        <p class="card-summary">据多方报道，谷歌即将在其年度I/O开发者大会前发布新版Gemini模型，性能级别与OpenAI近期GPT-5.5相当，并新增多模态语音与视觉增强能力。此举是谷歌在与OpenAI、Anthropic竞争中的关键反击，同时还将推出一批面向企业的AI代理工具。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Bloomberg / eWeek</span>
+          <a class="card-link" href="https://www.bloomberg.com/news/articles/2026-04-22/google-releases-new-ai-agents-to-challenge-openai-and-anthropic" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.24s">
+      <div class="card-num">06</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">🇨🇳 中国动态</span></div>
+        <h2 class="card-title">中国法院裁定：企业不得以AI替代为由单方面解雇员工</h2>
+        <p class="card-summary">中国一法院近日裁定，公司不得仅仅为了引入AI系统而单方面终止员工劳动合同，此举被视为当局在推进AI发展与维护劳动市场稳定之间寻求平衡的重要举措。该判决预计将对大规模AI驱动的裁员潮产生重要约束效果。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Bloomberg</span>
+          <a class="card-link" href="https://www.bloomberg.com/news/articles/2026-05-02/chinese-court-rules-firms-can-t-lay-off-workers-on-ai-grounds" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.28s">
+      <div class="card-num">07</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">🇨🇳 中国动态</span></div>
+        <h2 class="card-title">中国确认起草"综合性人工智能法"，覆盖算法、数据与算力监管</h2>
+        <p class="card-summary">中国国务院首次明确表示正在制定"综合性人工智能法律"，将加快完善涉及数据保护、算力、算法、知识产权、网络安全和供应链的立法体系。这是中国继《生成式AI管理办法》之后又一重大AI治理行动，标志着顶层设计进入新阶段。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：South China Morning Post</span>
+          <a class="card-link" href="https://www.scmp.com/news/china/politics/article/3353834/what-do-chinas-plans-comprehensive-new-ai-law-mean-future-technology" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.32s">
+      <div class="card-num">08</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">💰 商业融资</span></div>
+        <h2 class="card-title">2026年Q1全球AI风投创历史纪录：AI占2970亿美元总融资的81%</h2>
+        <p class="card-summary">Crunchbase数据显示，2026年Q1全球风险投资总额达2970亿美元，同比暴增逾150%，其中AI领域吸金2555亿美元，占比81%，单季度超过2025年全年AI融资总和。OpenAI（1220亿）、Anthropic（300亿）、xAI（200亿）、Waymo（160亿）四家前沿实验室合计融资1880亿美元。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Crunchbase News</span>
+          <a class="card-link" href="https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.36s">
+      <div class="card-num">09</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">💻 开发者</span></div>
+        <h2 class="card-title">Cursor发布Composer 2.5：基于Kimi K2.5模型，长任务执行能力大幅提升</h2>
+        <p class="card-summary">AI代码编辑器Cursor发布Composer 2.5，底层采用月之暗面（Moonshot AI）的Kimi K2.5模型构建，在持续执行长时间复杂任务和遵循复杂指令方面表现显著改善。这一合作也凸显了中国AI模型在全球开发者工具生态中的渗透加速。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：LLM Stats</span>
+          <a class="card-link" href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.40s">
+      <div class="card-num">10</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">🏭 行业应用</span></div>
+        <h2 class="card-title">微软报告：2026年全球AI使用率升至17.8%，阿联酋以70%领跑全球</h2>
+        <p class="card-summary">微软发布《2026年全球AI普及状况》报告，显示2026年Q1全球劳动年龄人口AI使用率从16.3%升至17.8%，增速持续加快。阿联酋以70.1%的使用率位居全球第一，而全球76%的受访组织已设立首席AI官（CAIO）职位，较2025年的26%大幅跃升。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Microsoft On the Issues</span>
+          <a class="card-link" href="https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div></div>
+<div id="panel-market" class="panel"><div class="main">
+  <div class="section-label"><span class="section-label-text">市场动态精选</span><div class="section-label-line"></div></div>
+  <div class="cards">
+
+    <article class="card" style="--delay:.04s">
+      <div class="card-num">01</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">📊 股市动态</span></div>
+        <h2 class="card-title">标普500创收盘新高7501点后急速回撤，道指周五重挫537点</h2>
+        <p class="card-summary">标普500指数本周中一度冲上7501.24点历史收盘新高，纳指同步刷新纪录至26635点，AI半导体股领涨。但周五国债收益率大幅跳升引发通胀担忧，道指单日暴跌537点（-1.07%），英伟达、波音、卡特彼勒跌幅居前，市场由盛转跌，投资者等待英伟达财报以研判AI行情持续性。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Yahoo Finance</span>
+          <a class="card-link" href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-may-15-092100519.html" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.08s">
+      <div class="card-num">02</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">🏦 宏观经济</span></div>
+        <h2 class="card-title">美联储8比4险维持利率不变，美银警告：2026年全年或零降息</h2>
+        <p class="card-summary">美联储4月29日以8比4的罕见近票（自1992年以来最接近）维持联邦基金利率于3.5%-3.75%区间不变，通胀已升至3.5%（PCE），核心PCE达3.2%。美银预测全年无降息，芝加哥联储主席古尔斯比表示加息选项"依然在桌上"，市场已完全排除今年降息预期。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Federal Reserve / TheStreet</span>
+          <a class="card-link" href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.12s">
+      <div class="card-num">03</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">🛢️ 大宗商品</span></div>
+        <h2 class="card-title">黄金跌至4542美元/盎司，原油因霍尔木兹海峡封锁维持高位</h2>
+        <p class="card-summary">黄金近期价格回落至4542美元/盎司，月内下跌约5.78%，但仍较一年前高出近41%。原油方面，美伊对峙导致霍尔木兹海峡商船通行受阻，全球能源供应短缺局面持续，油价仍在战后高位附近震荡，加剧通胀预期压力。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：Trading Economics / Fortune</span>
+          <a class="card-link" href="https://tradingeconomics.com/commodity/gold" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.16s">
+      <div class="card-num">04</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">📊 股市动态</span></div>
+        <h2 class="card-title">港股恒指跌1.6%至25963点，沪指跌1.02%收4135，中美峰会成果不及预期</h2>
+        <p class="card-summary">恒生指数周五收跌426点（-1.6%）至25963，腾讯、小米、美团、泡泡玛特均录得明显跌幅；沪指同步下跌1.02%至4135点，深成指跌1.17%。投资者对特朗普-习近平峰会具体成果感到失望，在明朗信号出现前保持观望。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：HKEX / South China Morning Post</span>
+          <a class="card-link" href="https://www.scmp.com/topics/china-stock-market" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" style="--delay:.20s">
+      <div class="card-num">05</div>
+      <div>
+        <div class="card-meta"><span class="card-tag">📜 政策动向</span></div>
+        <h2 class="card-title">特朗普-习近平峰会后：美方据报放行英伟达H200芯片对华出口</h2>
+        <p class="card-summary">CNBC报道，中美峰会后美方正就向中国放开英伟达H200芯片出口限制进行讨论，消息一度提振中国科技股行情。习近平向美国企业CEO表示中国将"更大开放"，美国财长贝森特称"美国在AI领域领先，因此可以与中国谈AI规则"，中美AI治理对话传出积极信号。</p>
+        <div class="card-footer">
+          <span class="card-source">来源：CNBC</span>
+          <a class="card-link" href="https://www.cnbc.com/2026/05/14/trump-xi-meeting-china-stocks-ai-rally.html" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div></div>
+<footer class="footer">
+  <p>AI Daily · 每个工作日自动更新 · <a href="index.html">查看所有期刊 →</a></p>
+</footer>
+<script>
+function switchTab(name,btn){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('panel-'+name).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
